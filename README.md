@@ -3,6 +3,7 @@
 ```
 $ git clone https://github.com/cooloo9871/k8s-certcheck.git;cd k8s-certcheck/
 ```
+### check rke2 
 ```
 $ sudo ./certcheck.sh
 client-admin.crt:              Nov  7 05:48:02 2024 GMT
@@ -26,4 +27,20 @@ client-kube-proxy.crt:         Nov  7 05:48:02 2024 GMT
 client-rke2-controller.crt:    Nov  7 05:48:02 2024 GMT
 server-ca.crt:                 Nov  5 05:48:02 2033 GMT
 serving-kubelet.crt:           Feb 20 00:03:08 2025 GMT
+```
+### check rke
+```
+$ sudo ./check.sh
+kube-apiserver.pem:            Feb 18 01:30:32 2034 GMT
+kube-apiserver-proxy-client.pem: Feb 18 01:30:35 2034 GMT
+kube-apiserver-requestheader-ca.pem: Nov 24 04:08:20 2033 GMT
+kube-ca.pem:                   Nov 24 04:08:20 2033 GMT
+kube-controller-manager.pem:   Feb 18 01:30:33 2034 GMT
+kube-etcd-192-168-11-70.pem:   Feb 18 01:30:37 2034 GMT
+kube-etcd-192-168-11-72.pem:   Feb 18 01:30:37 2034 GMT
+kube-etcd-192-168-11-73.pem:   Feb 18 01:30:36 2034 GMT
+kube-node.pem:                 Feb 18 01:30:35 2034 GMT
+kube-proxy.pem:                Feb 18 01:30:34 2034 GMT
+kube-scheduler.pem:            Feb 18 01:30:34 2034 GMT
+kube-service-account-token.pem: Nov 24 04:08:21 2033 GMT
 ```
