@@ -40,7 +40,7 @@ serving-kubelet.crt:           Feb 20 01:53:24 2025 GMT
 ```
 ### check rke master
 ```
-$ sudo ./check.sh
+$ sudo ./certcheck.sh
 kube-apiserver.pem:            Feb 18 01:30:32 2034 GMT
 kube-apiserver-proxy-client.pem: Feb 18 01:30:35 2034 GMT
 kube-apiserver-requestheader-ca.pem: Nov 24 04:08:20 2033 GMT
