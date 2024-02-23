@@ -6,27 +6,27 @@ $ git clone https://github.com/cooloo9871/k8s-certcheck.git;cd k8s-certcheck/
 ### check rke2 master
 ```
 $ sudo ./certcheck.sh
-client-admin.crt:              Nov  7 05:48:02 2024 GMT
-client-auth-proxy.crt:         Nov  7 05:48:02 2024 GMT
-client-ca.crt:                 Nov  5 05:48:02 2033 GMT
-client-ca.nochain.crt:         Nov  5 05:48:02 2033 GMT
-client-controller.crt:         Nov  7 05:48:02 2024 GMT
-client-kube-apiserver.crt:     Nov  7 05:48:02 2024 GMT
-client-kube-proxy.crt:         Nov  7 05:48:02 2024 GMT
-client-rke2-cloud-controller.crt: Nov  7 05:48:02 2024 GMT
-client-rke2-controller.crt:    Nov  7 05:48:02 2024 GMT
-client-scheduler.crt:          Nov  7 05:48:02 2024 GMT
-client-supervisor.crt:         Nov  7 05:48:02 2024 GMT
-request-header-ca.crt:         Nov  5 05:48:02 2033 GMT
-server-ca.crt:                 Nov  5 05:48:02 2033 GMT
-server-ca.nochain.crt:         Nov  5 05:48:02 2033 GMT
-serving-kube-apiserver.crt:    Nov  7 05:48:02 2024 GMT
-client-ca.crt:                 Nov  5 05:48:02 2033 GMT
-client-kubelet.crt:            Feb 20 00:03:08 2025 GMT
-client-kube-proxy.crt:         Nov  7 05:48:02 2024 GMT
-client-rke2-controller.crt:    Nov  7 05:48:02 2024 GMT
-server-ca.crt:                 Nov  5 05:48:02 2033 GMT
-serving-kubelet.crt:           Feb 20 00:03:08 2025 GMT
+client-admin.crt:              Feb 20 01:52:43 2025 GMT
+client-auth-proxy.crt:         Feb 20 01:52:43 2025 GMT
+client-ca.crt:                 Sep  2 06:07:14 2033 GMT
+client-ca.nochain.crt:         Sep  2 06:07:14 2033 GMT
+client-controller.crt:         Feb 20 01:52:43 2025 GMT
+client-kube-apiserver.crt:     Feb 20 01:52:43 2025 GMT
+client-kube-proxy.crt:         Feb 20 01:52:43 2025 GMT
+client-rke2-cloud-controller.crt: Feb 20 01:52:43 2025 GMT
+client-rke2-controller.crt:    Feb 20 01:52:43 2025 GMT
+client-scheduler.crt:          Feb 20 01:52:43 2025 GMT
+client-supervisor.crt:         Nov 22 06:55:17 2024 GMT
+request-header-ca.crt:         Sep  2 06:07:14 2033 GMT
+server-ca.crt:                 Sep  2 06:07:14 2033 GMT
+server-ca.nochain.crt:         Sep  2 06:07:14 2033 GMT
+serving-kube-apiserver.crt:    Feb 20 01:52:43 2025 GMT
+client-ca.crt:                 Sep  2 06:07:14 2033 GMT
+client-kubelet.crt:            Feb 20 01:52:45 2025 GMT
+client-kube-proxy.crt:         Feb 20 01:52:43 2025 GMT
+client-rke2-controller.crt:    Feb 20 01:52:43 2025 GMT
+server-ca.crt:                 Sep  2 06:07:14 2033 GMT
+serving-kubelet.crt:           Feb 20 01:52:44 2025 GMT
 ```
 ### check rke2 worker
 ```
