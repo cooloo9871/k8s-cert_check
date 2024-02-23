@@ -19,7 +19,7 @@ if [[ -n "$rke2dir" ]]; then
     # Print the filename and expiry date in a pretty format
     printf "%-30s %s\n" "$filename:" "$expiry"
   done
-elif [[ -n "rke2worker" ]]; then
+elif [[ -n "$rke2worker" ]]; then
   for file in "$rke2worker"/*.crt; do
     expiry=$(openssl x509 -enddate -noout -in "$file" | cut -d= -f 2-)
     filename=$(basename "$file")
