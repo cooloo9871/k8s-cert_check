@@ -38,7 +38,7 @@ client-rke2-controller.crt:    Feb 20 01:51:59 2025 GMT
 server-ca.crt:                 Sep  2 06:07:14 2033 GMT
 serving-kubelet.crt:           Feb 20 01:53:24 2025 GMT
 ```
-### check rke
+### check rke master
 ```
 $ sudo ./check.sh
 kube-apiserver.pem:            Feb 18 01:30:32 2034 GMT
@@ -53,4 +53,11 @@ kube-node.pem:                 Feb 18 01:30:35 2034 GMT
 kube-proxy.pem:                Feb 18 01:30:34 2034 GMT
 kube-scheduler.pem:            Feb 18 01:30:34 2034 GMT
 kube-service-account-token.pem: Nov 24 04:08:21 2033 GMT
+```
+### check rke worker
+```
+$ sudo ./certcheck.sh
+kube-ca.pem:                   Feb 18 09:21:23 2034 GMT
+kube-node.pem:                 Feb 18 09:21:25 2034 GMT
+kube-proxy.pem:                Feb 18 09:21:25 2034 GMT
 ```
