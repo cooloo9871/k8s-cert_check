@@ -1,4 +1,4 @@
-## This script is used to check the expiration time of k8s certificate for rke, rke2.
+## This script is used to check the expiration time of k8s certificate for rke, rke2, k3s.
 
 ```
 $ git clone https://github.com/cooloo9871/k8s-certcheck.git;cd k8s-certcheck/
@@ -61,3 +61,39 @@ kube-ca.pem:                   Feb 18 09:21:23 2034 GMT
 kube-node.pem:                 Feb 18 09:21:25 2034 GMT
 kube-proxy.pem:                Feb 18 09:21:25 2034 GMT
 ```
+### check k3s master
+```
+$ sudo ./certcheck.sh
+client-admin.crt:              Feb 22 08:32:56 2025 GMT
+client-auth-proxy.crt:         Feb 22 08:32:56 2025 GMT
+client-ca.crt:                 Feb 20 08:32:56 2034 GMT
+client-ca.nochain.crt:         Feb 20 08:32:56 2034 GMT
+client-controller.crt:         Feb 22 08:32:56 2025 GMT
+client-k3s-cloud-controller.crt: Feb 22 08:32:56 2025 GMT
+client-k3s-controller.crt:     Feb 22 08:32:56 2025 GMT
+client-kube-apiserver.crt:     Feb 22 08:32:56 2025 GMT
+client-kube-proxy.crt:         Feb 22 08:32:56 2025 GMT
+client-scheduler.crt:          Feb 22 08:32:56 2025 GMT
+client-supervisor.crt:         Feb 22 08:32:56 2025 GMT
+request-header-ca.crt:         Feb 20 08:32:56 2034 GMT
+server-ca.crt:                 Feb 20 08:32:56 2034 GMT
+server-ca.nochain.crt:         Feb 20 08:32:56 2034 GMT
+serving-kube-apiserver.crt:    Feb 22 08:32:56 2025 GMT
+client-ca.crt:                 Feb 20 08:32:56 2034 GMT
+client-k3s-controller.crt:     Feb 22 08:32:56 2025 GMT
+client-kubelet.crt:            Feb 22 08:57:08 2025 GMT
+client-kube-proxy.crt:         Feb 22 08:32:56 2025 GMT
+server-ca.crt:                 Feb 20 08:32:56 2034 GMT
+serving-kubelet.crt:           Feb 22 08:57:07 2025 GMT
+```
+### check k3s worker
+```
+$ sudo ./certcheck.sh
+client-ca.crt:                 Feb 20 08:32:56 2034 GMT
+client-k3s-controller.crt:     Feb 22 08:32:56 2025 GMT
+client-kubelet.crt:            Feb 22 09:01:56 2025 GMT
+client-kube-proxy.crt:         Feb 22 08:32:56 2025 GMT
+server-ca.crt:                 Feb 20 08:32:56 2034 GMT
+serving-kubelet.crt:           Feb 22 09:01:56 2025 GMT
+```
+
